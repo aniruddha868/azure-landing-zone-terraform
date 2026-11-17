@@ -47,22 +47,19 @@ azure-landing-zone-terraform/
 │   │   ├── main.tf
 │   │   ├── variables.tf
 │   │   └── outputs.tf
-│   ├── monitoring/
 │   │   ├── main.tf
 │   │   ├── variables.tf
-│   │   └── outputs.tf
+
 │   └── security/
 │       ├── main.tf
 │       ├── variables.tf
-│       └── outputs.tf
+      
 ├── architecture/
 │   └── architecture.md
 ├── examples/
-│   └── terraform.tfvars.example
+│   └── terraform.tfvars
 ├── main.tf
 ├── variables.tf
-├── outputs.tf
-├── versions.tf
 ├── .gitignore
 └── README.md
 ```
@@ -108,7 +105,6 @@ Copy-Item examples/terraform.tfvars.example terraform.tfvars
 terraform init
 terraform fmt -recursive
 terraform validate
-terraform plan -out=tfplan
 terraform apply tfplan
 ```
 
